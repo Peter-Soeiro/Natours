@@ -54,3 +54,28 @@
       animation: moveInBottom 0.5s ease-out 0.5s backwards;
    }
 }
+
+.btn-text {
+   font-size: 1.6rem;
+   text-decoration: none;
+   padding: 0.4rem 0.2rem;
+   display: inline-block;
+   transition: all 0.2s;
+   &:link,
+   &:visited {
+      color: $color-primary;
+      border-bottom: solid 1px $color-primary;
+   }
+
+   &:hover {
+      background-color: $color-primary;
+      color: $color-light;
+      transform: translateY(-2px);
+      box-shadow: 0 1rem 2.5rem rgba($color-black, 0.15);
+   }
+
+   &:active {
+      transform: translateY(0);
+      box-shadow: 0 0.8rem 1.5rem rgba($color-black, 0.15);
+   }
+}
